@@ -1,14 +1,14 @@
 provider "aws" {
-  region = "us-west-1"
+  region = "eu-east-1"
 }
 
-# terraform {
-#   backend "s3" {
-#     bucket = "YOUR-UNIQUE-BUCKET-ID"
-#     key    = "terraform/terrasphere/terraform.tfstate"
-#     region = "us-east-1"
-#   }
-# }
+ terraform {
+   backend "s3" {
+     bucket = "52c908b7-d4ed-d907-0586-e77bf9b04a2a-backend"
+     key    = "terraform/terrasphere/terraform.tfstate"
+     region = "us-east-1"
+   }
+ }
 
 provider "template" {
 }
